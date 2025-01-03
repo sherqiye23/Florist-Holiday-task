@@ -2,73 +2,73 @@
     "flowers": [
         {
             "id": 1,
-            "name": "daisy",
+            "name": "Kaktus",
             "price": 27.50,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-1.jpg.webp",
-            "description": ""
+            "description": "Kaktuslar quraqlığa davamlı bitkilərdir və əsasən səhralarda böyüyürlər. Saxlama üçün az su tələb edir və ev bitkisi kimi məşhurdur."
         },
         {
             "id": 2,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Pion Çiçəyi",
+            "price": 27.00,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-2.jpg.webp",
-            "description": ""
+            "description": "Pion çiçəkləri Çində qədim dövrlərdən bəri gözəlliyin və zənginliyin simvolu sayılır. Əsasən yaz və yay mövsümündə çiçək açır."
         },
         {
             "id": 3,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Asma Bitki",
+            "price": 17.50,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-3.jpg.webp",
-            "description": ""
+            "description": "Asma bitkilər dekorativ məqsədlər üçün geniş istifadə olunur. Havanı təmizləməkdə də təsirlidir və az günəş işığı ilə böyüyə bilir."
         },
         {
             "id": 4,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Pion Çiçəkləri",
+            "price": 20.10,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-4.jpg.webp",
-            "description": ""
+            "description": "Pionlar uzunömürlü çoxillik çiçəklərdir və müxtəlif rəng çalarlarında olur. Toy və xüsusi tədbirlərdə dekorasiya üçün çox sevilir."
         },
         {
             "id": 5,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Şüşədə Bitki",
+            "price": 7.00,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-5.jpg.webp",
-            "description": ""
+            "description": "Şüşə qabdakı bitkilər, əsasən hidroponik üsulla yetişdirilir. Bu metod köklərin su içində böyüməsini təmin edir və ev dekorasiyasında maraqlı görünüş yaradır."
         },
         {
             "id": 6,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Eukalipt",
+            "price": 13.90,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-6.jpg.webp",
-            "description": ""
+            "description": "Eukalipt ağacının budaqları və yarpaqları aromatik xüsusiyyətləri ilə tanınır. Çox vaxt otaq havasını təravətləndirmək və dekorasiya üçün istifadə olunur."
         },
         {
             "id": 7,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Kniphofia (Torch Lily)",
+            "price": 37.50,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-7.jpg.webp",
-            "description": ""
+            "description": "Qırmızı və sarı rəngləri ilə məşhur olan bu çiçək Torch Lily adlanır. Əsasən tropik bağlarda yetişdirilir və yay mövsümündə çiçək açır."
         },
         {
             "id": 8,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Aloe Vera",
+            "price": 40.50,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-8.jpg.webp",
-            "description": ""
+            "description": "Aloe vera, dərman bitkisi kimi məşhurdur. Dərinin sağalmasına kömək edir və həmçinin ev bitkisi kimi də geniş yayılmışdır."
         },
         {
             "id": 9,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Hiacinth",
+            "price": 5.45,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-9.jpg.webp",
-            "description": ""
+            "description": "Sümbül bahar mövsümünün simvoludur. Gözəl qoxusu və rəngarəng çiçəkləri ilə məşhurdur."
         },
         {
             "id": 10,
-            "name": "daisy",
-            "price": 27.50,
+            "name": "Hortensiya",
+            "price": 23.10,
             "image": "https://preview.colorlib.com/theme/florist/img/product/product-10.jpg.webp",
-            "description": ""
+            "description": "Hortensiya müxtəlif rənglərdə ola bilir. Yaşıl hortensiya xüsusilə nadir və dekorativ məqsədlər üçün istifadə olunur."
         }
     ]
 }
