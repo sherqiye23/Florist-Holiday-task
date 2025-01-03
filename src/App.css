@@ -12,3 +12,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.flower-card {
+  .absolute {
+    background-color: #000;
+    transition: all .3s ease;
+  }
+
+  &:hover {
+    .absolute {
+      background-color: #f45d96;
+    }
+
+    .text-2xl {
+      text-decoration: underline;
+    }
+  }
+}
+
+.our-flower {
+  overflow: hidden;
+
+  .hidden-icons {
+    top: 80%;
+    transition: top .5s ease;
+
+    span {
+      background-color: #fff;
+      transition: all .3s ease;
+
+      &:hover {
+        background-color: #f45d96;
+        color: #fff;
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &:hover .hidden-icons {
+    top: 35%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 640px) {
+  .our-flower {
+    .hidden-icons {
+      top: 90% !important;
+    }
+
+    &:hover .hidden-icons {
+      top: 50% !important;
+    }
+  }
+}

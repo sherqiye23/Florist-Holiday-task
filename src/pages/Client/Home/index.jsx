@@ -7,6 +7,8 @@ import ContactUs from "../../../components/Client/Contact us section";
 import CustomFlower from "../../../components/Client/Custom Flower";
 import FooterFlowers from "../../../components/Client/Footer Flowers";
 import BusinessmanMessage from "../../../components/Client/Businessman message";
+import LatestPosts from "../../../components/Client/Latest posts";
+import OurFlowers from "../../../components/Client/OUR FLOWERS";
 
 export default function Home() {
     return (
@@ -22,8 +24,9 @@ export default function Home() {
             <AboutUs/>
             <ContactUs/>
             {/* guller olacaq burda axira saxla */}
+            <OurFlowers/>
             <CustomFlower/>
-
+            <LatestPosts/>
             <BusinessmanMessage/>
             <FooterFlowers/>
         </>

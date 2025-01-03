@@ -2,7 +2,73 @@
     "flowers": [
         {
             "id": 1,
-            "name": "daisy"
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-1.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 2,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-2.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 3,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-3.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 4,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-4.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 5,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-5.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 6,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-6.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 7,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-7.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 8,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-8.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 9,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-9.jpg.webp",
+            "description": ""
+        },
+        {
+            "id": 10,
+            "name": "daisy",
+            "price": 27.50,
+            "image": "https://preview.colorlib.com/theme/florist/img/product/product-10.jpg.webp",
+            "description": ""
         }
     ]
 }
