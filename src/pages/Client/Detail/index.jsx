@@ -1,9 +1,10 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router"
 import flowersUrl from "../../../assets/js/flowersUrl";
 import { Container } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import { FlowersContext } from "../../../context/Flowers";
 
 
 export default function Detail() {
@@ -11,7 +12,7 @@ export default function Detail() {
     let { id } = useParams()
     let navigate = useNavigate()
 
-    let [loader, setLoader] = useState(true)
+    let { loader, setLoader } = useContext(FlowersContext);
 
     function GetFlower() {
         axios.get(flowersUrl + id).

@@ -20,10 +20,10 @@ export default function OurFlowers() {
         e.stopPropagation();
         let findFav = favorites.find(item => item.id == flower.id);
         if (findFav) {
-            swal("Sizin favorites səhifənizdə bu məhsul mövcuddur!", "", "error");
+            swal(`${findFav.name} sizin favorites səhifənizdə mövcuddur!`, "", "error");
         } else {
             setFavorites([...favorites, flower])
-            swal("Məhsul favorites səhifənizə əlavə edildi!", "", "success");
+            swal(`${flower.name} favorites səhifənizə əlavə edildi!`, "", "success");
         }
     }
 
@@ -34,10 +34,10 @@ export default function OurFlowers() {
         if (findBasket) {
             findBasket.count++
             setBasket([...basket])
-            swal("Səbətinizdəki məhsulun sayı 1 vahid artırıldı!", "", "success");
+            swal(`${findBasket.name} məhsulunun sayı 1 vahid artırıldı!`, "", "success");
         } else {
             setBasket([...basket, { ...flower, count: 1 }])
-            swal("Məhsul səbətinizə əlavə edildi!", "", "success");
+            swal(`${flower.name} səbətinizə əlavə edildi!`, "", "success");
         }
     }
 

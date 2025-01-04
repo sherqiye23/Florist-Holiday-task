@@ -14,42 +14,23 @@ export default function Favorites() {
         setAllFavorites(favorites)
     }, [favorites])
 
-    function fireAlert() {
-        Swal.fire({
-            title: 'Bu məhsulu favorites səhifəsindən silmək istəyirsiz?',
-            showConfirmButton: true,
-            showCancelButton: true,
-            confirmButtonText: "Yes",
-            cancelButtonText: "Cancel",
-            icon: 'warning'
-        }
-        ).then((result) => {
-            if (result.isConfirmed) {
-
-                Swal.fire('Məhsul favorites səhifənizdən silindi', '', 'success');
-
-            } else
-                Swal.fire('', '', 'error')
-        })
-    }
-
     // add basket
     const handleBasket = (favorite) => {
         let findBasket = basket.find(item => item.id == favorite.id);
         if (findBasket) {
             findBasket.count++
             setBasket([...basket])
-            swal("Səbətinizdəki məhsulun sayı 1 vahid artırıldı!", "", "success");
+            swal(`${favorite.name} məhsulunun sayı 1 vahid artırıldı!`, "", "success");
         } else {
             setBasket([...basket, { ...favorite, count: 1 }])
-            swal("Məhsul səbətinizə əlavə edildi!", "", "success");
+            swal(`${favorite.name} səbətinizə əlavə edildi!`, "", "success");
         }
     }
 
     // delete favorites
     const deleteFavorites = (favorite) => {
         Swal.fire({
-            title: 'Bu məhsulu favorites səhifəsindən silmək istəyirsiz?',
+            title: `${favorite.name} məhsulunu favoritesdən silmək istəyirsiz?`,
             showConfirmButton: true,
             showCancelButton: true,
             confirmButtonText: "Yes",
@@ -60,7 +41,7 @@ export default function Favorites() {
             if (result.isConfirmed) {
                 let filter = favorites.filter(item => item.id != favorite.id)
                 setFavorites(filter)
-                Swal.fire('Məhsul favorites səhifənizdən silindi', '', 'success');
+                Swal.fire(`${favorite.name} silindi`, '', 'success');
             }
         })
 

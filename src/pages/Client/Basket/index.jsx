@@ -31,7 +31,7 @@ export default function Basket() {
 
     const handleDelete = (element) => {
         Swal.fire({
-            title: 'Bu məhsulu səbətinizdən silmək istəyirsiz?',
+            title: `${element.name} məhsulunu səbətinizdən silmək istəyirsiz?`,
             showConfirmButton: true,
             showCancelButton: true,
             confirmButtonText: "Yes",
@@ -42,7 +42,7 @@ export default function Basket() {
             if (result.isConfirmed) {
                 let filter = basket.filter((item) => item.id != element.id)
                 setBasket(filter)
-                Swal.fire('Məhsul səbətinizdən silindi', '', 'success');
+                Swal.fire(`${element.name} səbətinizdən silindi`, '', 'success');
             }
         })
     }
