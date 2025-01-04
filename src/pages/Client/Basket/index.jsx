@@ -128,7 +128,8 @@ export default function Basket() {
                             <div className="flex items-center justify-between">
                                 <h1>Total Price: ${total}</h1>
                                 <button onClick={() => handleClear()}
-                                    className="px-4 py-2 rounded-5 font-semibold bg-[#f45d96] text-white text-lg">Clear Basket</button>
+                                    className="px-4 py-2 rounded-5 font-semibold bg-[#f45d96] text-white text-lg">Clear Basket
+                                </button>
                             </div>
                         </>
                     )

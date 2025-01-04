@@ -109,6 +109,24 @@ export default function Favorites() {
         }
     }
 
+    // clear
+    const handleClear = () => {
+        Swal.fire({
+            title: 'Favorites səhifəsindəki bütün məhsulları silmək istəyirsiz?',
+            showConfirmButton: true,
+            showCancelButton: true,
+            confirmButtonText: "Yes",
+            cancelButtonText: "Cancel",
+            icon: 'warning'
+        }
+        ).then((result) => {
+            if (result.isConfirmed) {
+                setFavorites([])
+                Swal.fire('Bütün məhsullar silindi', '', 'success');
+            }
+        })
+    }
+
     return (
         <>
             <Helmet>
@@ -134,6 +152,10 @@ export default function Favorites() {
                                     <option value="3">A-Z</option>
                                     <option value="4">Z-A</option>
                                 </select>
+                                <button onClick={() => handleClear()}
+                                    className="px-4 py-1 mx-3 rounded-5 font-semibold bg-[#f45d96] text-white text-lg">
+                                    Clear Favorites
+                                </button>
                             </div>
                             <div className="grid gap-6 my-5 grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
                                 {
