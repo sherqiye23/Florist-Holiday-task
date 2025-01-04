@@ -3,7 +3,8 @@ import { Container } from "react-bootstrap";
 import { FlowersContext } from "../../../context/Flowers";
 import { BasketContext } from "../../../context/Basket";
 import { FavoritesContext } from "../../../context/Favorites";
-
+import swal from 'sweetalert';
+ 
 export default function OurFlowers() {
     let { flowers } = useContext(FlowersContext);
     let { favorites, setFavorites } = useContext(FavoritesContext)
@@ -19,9 +20,10 @@ export default function OurFlowers() {
         e.stopPropagation();
         let findFav = favorites.find(item => item.id == flower.id);
         if (findFav) {
-            alert("Sizin favorites sehifenizde bu mehsul movcuddur")
+            swal("Sizin favorites səhifənizdə bu məhsul mövcuddur!", "", "error");
         } else {
             setFavorites([...favorites, flower])
+            swal("Məhsul favorites səhifənizə əlavə edildi!", "", "success");
         }
     }
 
@@ -32,8 +34,10 @@ export default function OurFlowers() {
         if (findBasket) {
             findBasket.count++
             setBasket([...basket])
+            swal("Səbətinizdəki məhsulun sayı 1 vahid artırıldı!", "", "success");
         } else {
             setBasket([...basket, { ...flower, count: 1 }])
+            swal("Məhsul səbətinizə əlavə edildi!", "", "success");
         }
     }
 
@@ -114,7 +118,7 @@ export default function OurFlowers() {
             <div className="grid grid-cols-1 gap-2.5 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
                 {
                     allFlowers.map((flower) => (
-                        <div className="relative our-flower" key={flower.id} onClick={() => handleDetail(flower.id)}>
+                        <div className="relative our-flower" style={{userSelect:"none"}} key={flower.id} onClick={() => handleDetail(flower.id)}>
                             <div>
                                 <img src={flower.image} alt="flower" className="w-full h-full" />
                             </div>

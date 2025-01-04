@@ -16,6 +16,8 @@ export default function Home() {
             <Helmet>
                 <link rel="icon" type="image/svg+xml" href="/src/assets/flow-logo.png" />
                 <title>Florist🌸</title>
+                <meta name="keywords" content="Flower, Flowers, Florist" />
+                <meta name="description" content="Florist" />
             </Helmet>
 
             <Slider/>
@@ -23,7 +25,6 @@ export default function Home() {
             <PlantsItems/>
             <AboutUs/>
             <ContactUs/>
-            {/* guller olacaq burda axira saxla */}
             <OurFlowers/>
             <CustomFlower/>
             <LatestPosts/>
